@@ -1,0 +1,37 @@
+.TcolorW{
+  color: white;
+}
+.Marg{
+  margin: 20px 40px;
+}
+.MarginB{
+  margin-bottom: 0;
+}
+.Txt{
+  padding: 0;
+}
+.Border{
+ 
+  border: 0;
+}
+.Border2{
+  border: 0;
+}
+.Br{
+  border: 0;
+}
+.BrColor{
+  border: none;
+  background: blue;
+}
+.card{
+  border: none;
+  padding: 10px;
+}
+.text-white{
+  color: rgb(180, 178, 178);
+}
+input{
+  width: 40% !important;
+  margin: auto;
+}
