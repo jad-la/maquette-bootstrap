@@ -9,34 +9,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+ 
 
-  </header class="row">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-         </button>
-          <div class="collapse navbar-collapse TcolorW" id="navbarTogglerDemo01">
-            <a class="navbar-brand " href="#">NavBar</a>
-           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             
-              <li class="nav-item ">
-                <a class="nav-link TcolorW" href="#">Lien</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link TcolorW" href="#">Lien</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link TcolorW" href="#">Lien</a>
-              </li>
-            </ul>
-      </nav>
+  <header class="">
+      <DIv class="row head">
+        <H1>Ma première page Bootstrap 5</H1>
+        <P class="PH">En redimensionnant la page dans le navigation, on voit le responsive en action!</P> 
+      </DIv>
+  </header>    
 
+
+  <nav class=" row navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collaps data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedConten aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+           <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">Link</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+         </li> 
+       </ul> 
+      </div>
+   </div>
+ </nav>
 
   <main class="row Marg">
-    <div class="col-md-4">
-      <div class="card Border">
+
+
+    <div class="col-md-4 col12 col-lg-4">
+      <div class="row card SansM ">
         <h3>A propos de moi</h3>
         <p class="MarginB">Ma photo:</p>
         <img src="./portrait-user-unsplash.jpg" class="card-img-top" alt="portrait utilis">
@@ -44,23 +53,29 @@
           <p class="card-text ">ome quicSk example text to build.</p>
         </div>
       </div>
-      <div class="card Border2" >
-        <h3>Quelques liens:</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-      <div class="card-header BrColor">
-          Featured
-        </div>
-        <ul class="list-group list-group-flush Br">
-          <li class="list-group-item Br">An item</li>
-          <li class="list-group-item Br">A second item</li>
-          <li class="list-group-item Br">A third item</li>
-        </ul>
+
+      <div class="row">
+          <h3>Quelques liens:</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <ul class="nav nav-pills nav-justified FlexColonne">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Lien actif</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lien</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lien</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Lien désactivé</a>
+            </li>
+          </ul>
       </div>
     </div>
 
     <div class="col-md-8">
-
-      <div class="card mb-3 row">
+      <div class="card mb-3 row DivButtom">
         <h3>Un grand titre</h3>
         <p class="MarginB">Un sous-titre, 18 sept. 2020</p>
         <img src="./pano1-unsplash.jpg" class="card-img-top" alt="montagne">
@@ -90,14 +105,13 @@
      
       <div class="card-body ">
         <p class="card-title text-white">Inscription à notre newsletter</p>
-        <input type="text" readonly class="form-control" id="staticEmail" placeholder="email@example.com">
+        <input type="text"  class="form-control" id="staticEmail" placeholder="email@example.com">
       </div>
-      <div class="card-footer text-muted">
-        2 days ago
+      <div class="card-footer text-muted flex">
+        <span>Mentions Légales</span> <span>Site by La Manu</span> 
       </div>
     </div>
   </footer>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
